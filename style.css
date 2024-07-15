@@ -172,22 +172,25 @@ body
 
 /****************************************************/
 
-#pic-section
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-}
-
 .rightPic, .leftPic
 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.rightPic img, .leftPic img
+{
+    width: 100%;
+    height: auto;
+}
+
+.text-content
+{
     width: 50%;
+    padding: 40px;
+    font-size: 120%;
 }
 
 /****************************************************/
