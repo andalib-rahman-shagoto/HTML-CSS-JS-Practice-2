@@ -48,12 +48,14 @@ body
     background-color: blue;
 }
 
+/********************** Top and Bottom Section **********************/
+
 #top-section, #bottom-section
 {
     background-image: url(img/bg-masthead.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,7 +93,7 @@ body
 
 #top-section p, #bottom-section p
 {
-    font-size: large;
+    font-size: small;
     text-align: center;
 }
 
@@ -119,6 +121,11 @@ body
     outline: 3px solid rgb(21, 150, 255);
 }
 
+#top-section-form, #bottom-section-form
+{
+    width: 100%;
+}
+
 #top-section button, #bottom-section button
 {
     padding: 20px;
@@ -135,6 +142,16 @@ body
     transition: 0.7s;
     background-color: blue;
 }
+
+.input-and-button
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/****************************************************/
 
 #icon-section
 {
@@ -190,9 +207,12 @@ body
 {
     box-sizing: border-box;
     width: 50%;
+    height: auto;
     padding: 50px;
     font-size: 120%;
 }
+
+
 
 .pic-content
 {
@@ -242,7 +262,7 @@ body
 
 #bottom-section
 {
-    height: 40vh;
+    height: auto;
 }
 
 #bottom-section h1
@@ -308,9 +328,15 @@ body
         flex-direction: column;
     }
 
+    .text-content
+    {
+        width: 100%;
+    }
+
     .pic-content
     {
         width: 100%;
+        object-fit: contain;
     }
 
     #profile-container

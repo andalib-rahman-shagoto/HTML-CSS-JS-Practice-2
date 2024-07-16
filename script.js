@@ -67,7 +67,9 @@ $('document').ready(function(){
 
     $('#top-email').keydown(top_email_checker);
     $('#top-email').keyup(top_email_checker);
+    $('#top-email').focus(top_email_checker);
 
     $('#bottom-email').keydown(bottom_email_checker);
     $('#bottom-email').keyup(bottom_email_checker);
+    $('#bottom-email').focus(bottom_email_checker);
 });
