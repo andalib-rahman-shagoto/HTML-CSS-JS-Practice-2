@@ -55,7 +55,8 @@ body
     background-image: url(img/bg-masthead.jpg);
     background-size: cover;
     background-position: center;
-    height: auto;
+    height: 100vh;
+    max-height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,14 +107,9 @@ body
     margin-right: 5px;
 }
 
-.email-input:focus
-{
-    outline: none;
-}
-
 .wrong-email
 {
-    outline: 1px solid red;
+    outline: 2px solid red;
 }
 
 .correct-email
@@ -313,6 +309,11 @@ body
 
 @media screen and (max-width: 900px)
 {
+    #top-section h1
+    {
+        font-size: 2em;
+    }
+
     #icon-section
     {
         flex-direction: column;

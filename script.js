@@ -65,6 +65,11 @@ $('document').ready(function(){
         }
     }
 
+    $('#topReq').hide();
+    $('#topInv').hide();
+    $('#bottomReq').hide();
+    $('#bottomInv').hide();
+
     $('#top-email').keydown(top_email_checker);
     $('#top-email').keyup(top_email_checker);
     $('#top-email').focus(top_email_checker);
